@@ -41,12 +41,14 @@ header {
 }
 
 .sticky-header {
-    width: 40%;
+    width: 100%;
     margin: auto;
     padding: 10px 16px;
     position: sticky;
     text-align: center;
     top: 0;
+    background: #ece9e9;
+    z-index: 50;
 }
 
 .sticky-nav-text {
@@ -54,3 +56,42 @@ header {
     font-size: medium;
 }
 
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+    position: relative;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+  .flex-item-right img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .sticky-header + section {
+    margin-top: 10px
+  }
+
+  .anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+  }

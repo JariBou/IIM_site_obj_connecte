@@ -1,0 +1,56 @@
+header {      
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.nav-list { padding: 0;        
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-list li { 
+    display: inline-block;         
+    width: 20%;
+    font-size: 22px;         
+    text-align: center;
+    vertical-align:top;
+}
+
+.video-container {
+    display: inline-block;
+    width: 100%;
+    columns: 3;
+}
+
+.centered-div {
+    margin: auto;
+    text-align: center;
+    width: 97%;
+    border: 3px solid green;
+    padding: 1%;
+}
+
+.centered-div video {
+    display: inline-block;
+}
+
+.centered-div div {
+    display: inline-block;
+}
+
+.sticky-header {
+    width: 40%;
+    margin: auto;
+    padding: 10px 16px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+}
+
+.sticky-nav-text {
+    font-weight: bolder;
+    font-size: medium;
+}
+

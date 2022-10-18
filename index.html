@@ -9,37 +9,29 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <header class="header-div">
+    <header>
 
-        <ul class="nav-list">
-            <p>
-                <li>
-                    <a class="nav-text" href="Accueil.html"><img src="images/logo.svg"></a>
-                <li>
-                    <a class="nav-text" href="tests.html">Time</a>
-                <li>
-                    <a class="nav-text" href="">Sky</a>    
-                <li>
-                    <a class="nav-text" href="">Market</a>
-                    
-            </p>    
-        </ul>
+        <div class="flex-nav">
+            <a class="nav-text" href="index.html"><img src="images/logo.svg"></a>
+            <a class="nav-text" href="tests.html">Time</a>
+            <a class="nav-text" href="">Sky</a>    
+            <a class="nav-text" href="">Market</a>
+        </div>
 
     </header>
 
-    <div id="stickyHeader" class="sticky-header">
-        <ul class="nav-list">  <!-- TODO: METTRE DU FLEX SUR LA NAV -->
-            <p>
-                <li>
-                    <a class="sticky-nav-text nav-text" href="#video-anchor">Video</a>
-                <li>
-                    <a class="sticky-nav-text nav-text" href="#presentation-anchor">Presentation</a>    
-                <li>
-                    <a class="sticky-nav-text nav-text" href="#specs-anchor">Specs</a>
-                <li>
-                    <a class="sticky-nav-text nav-text" href="#slideshow-anchor">Examples</a>
-            </p>    
-        </ul>
+    <div class="sticky-header">
+        <div class="flex-nav">  <!-- TODO: METTRE DU FLEX SUR LA NAV -->
+    
+            <a class="sticky-nav-text nav-text" href="#video-anchor">Video</a>
+        
+            <a class="sticky-nav-text nav-text" href="#presentation-anchor">Presentation</a>    
+        
+            <a class="sticky-nav-text nav-text" href="#specs-anchor">Specs</a>
+        
+            <a class="sticky-nav-text nav-text" href="#slideshow-anchor">Examples</a>
+            
+        </div>
     </div>
 
     <main>
@@ -57,7 +49,7 @@
                     </video>
                 </div> 
                 <div class="flex-item-right">
-                    <p>Lorem ipsum tu connais</p>
+                    Lorem ipsum tu connais
                 </div>
             </div>
         </section>
@@ -95,7 +87,7 @@
                     
                     <h1>Caractéristiques détaillées</h1>
 
-                    <div id="scrollSpecs" class="scroll" style="--width: 80%; --height: 20px;">
+                    <div id="scrollSpecs" class="scroll" style="--width: 50%; --height: 20px;">
                         
                             <p style="position: relative;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a

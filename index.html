@@ -5,6 +5,8 @@
     <title>LaMetric - A Connected Clock</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slideshow.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <header class="header-div">
@@ -12,13 +14,13 @@
         <ul class="nav-list">
             <p>
                 <li>
-                    <a href="Accueil.html"><img src="images/logo.svg"></a>
+                    <a class="nav-text" href="Accueil.html"><img src="images/logo.svg"></a>
                 <li>
-                    <a href="">Time</a>
+                    <a class="nav-text" href="tests.html">Time</a>
                 <li>
-                    <a href="">Sky</a>    
+                    <a class="nav-text" href="">Sky</a>    
                 <li>
-                    <a href="">Market</a>
+                    <a class="nav-text" href="">Market</a>
                     
             </p>    
         </ul>
@@ -26,14 +28,16 @@
     </header>
 
     <div id="stickyHeader" class="sticky-header">
-        <ul class="nav-list">
+        <ul class="nav-list">  <!-- TODO: METTRE DU FLEX SUR LA NAV -->
             <p>
                 <li>
-                    <a class="sticky-nav-text" href="#video-anchor">Video</a>
+                    <a class="sticky-nav-text nav-text" href="#video-anchor">Video</a>
                 <li>
-                    <a class="sticky-nav-text" href="#presentation-anchor">Presentation</a>    
+                    <a class="sticky-nav-text nav-text" href="#presentation-anchor">Presentation</a>    
                 <li>
-                    <a class="sticky-nav-text" href="#specs-anchor">Specs</a>
+                    <a class="sticky-nav-text nav-text" href="#specs-anchor">Specs</a>
+                <li>
+                    <a class="sticky-nav-text nav-text" href="#slideshow-anchor">Examples</a>
             </p>    
         </ul>
     </div>
@@ -46,10 +50,15 @@
 
         <section id="video-section">
             <p class="anchor" id="video-anchor">anchor</p>
-            <div class="centered-div">
-                <video autoplay muted loop>
-                    <source src="videos/Lametric TIME. Overview..mp4" alt="video of the LaMetric Time" type="video/mp4" />
-                </video>
+            <div class="centered-div-no-align flex-container flex-center">
+                <div class="flex-item-left">
+                    <video autoplay muted loop>
+                        <source src="videos/Lametric_TIME.Overview.mp4" alt="video of the LaMetric Time" type="video/mp4" />
+                    </video>
+                </div> 
+                <div class="flex-item-right">
+                    <p>Lorem ipsum tu connais</p>
+                </div>
             </div>
         </section>
 
@@ -60,7 +69,7 @@
             <div class="centered-div flex-container">
 
                 <div class="flex-item-left">
-                    <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+                    <img src="images/1_Phone_clock_faces_0.png" alt="Phone with the clock app" height="720">
                 </div>
                 <div class="flex-item-right">
                     <p>LOLOLOLOLOLOLOLOLOLOL</p>
@@ -74,20 +83,166 @@
 
         <section id="specs">
             <p class="anchor" id="specs-anchor">anchor</p>
-            <div class="centered-div flex-container">
+            <div class="centered-div flex-container flex-space">
 
-                <p>Specs motherfucker</p>
+                <div class="flex-item-left">
+                    <p>Specs motherfucker</p>
+                    <img src="images/front_specs_img.png" alt="Front and side specs img" height="360">
+                    <img src="images/side_specs_img.png" alt="Side specs img" height="240">
+                </div>
+
+                <div class="flex-item-right">
+                    
+                    <h1>Caractéristiques détaillées</h1>
+
+                    <div id="scrollSpecs" class="scroll" style="--width: 80%; --height: 20px;">
+                        
+                            <p style="position: relative;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look likLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
+                                n unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
+                                established fact that a reader will be distracted by the readable content of a page
+                                when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                                content here', making it look like readable English. Many desktop publishing packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search 
+                                for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        
+                    </div>
+                </div>
 
             </div>
         </section>  
 
         <br>
-        <div class="centered-div"></div>
+        <br>
+
+        <section id="slideshow">
+            <p class="anchor" id="slideshow-anchor">anchor</p>
+            <div class="marquee-wrapper">
+                <div class="container">
+                    <div class="marquee-block">
+                        <div class="marquee-inner to-left">
+                            <span class="marquee-span">
+                                <!-- Done by JS -->
+                            </span>
+                            <span class="marquee-span">
+                                <!-- Done by JS -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
         <br>
         <div class="centered-div"></div>
         <br>
+        <br>
         <div class="centered-div"></div>
         <br>
+        <br>
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
+        <img src="images/1 Phone clock faces_0.png" alt="Phone with the clock app" height="720">
         <div class="centered-div"></div>
 
 </main>

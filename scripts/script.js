@@ -4,8 +4,6 @@ var filename_patter = "slide_X.jpg";
 window.onload = function() {
 
     var marquees = document.getElementsByClassName('marquee-span');
-    console.log(marquees); 
-
     
 
     for (let id in marquees) {
@@ -20,10 +18,9 @@ window.onload = function() {
     
             var img = document.createElement("img");
             img.src = filepath;
+            img.alt = `clock_img_${i}`  /* For good practice */
             
             div.appendChild(img);
-
-            console.log(id);
     
     
             try{
@@ -45,7 +42,6 @@ var setScrollHeight = function() {
     var scroll = document.getElementById("scrollSpecs");
     var parent = scroll.parentNode;
     const parentHeight = parent.offsetHeight;
-    console.log(parentHeight);
     scroll.style.setProperty("--height", (80 / 100 * parentHeight).toString() + "px");
     console.log(20 / 100 * parentHeight);
 }

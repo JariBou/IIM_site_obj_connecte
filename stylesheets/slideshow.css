@@ -1,6 +1,8 @@
 .marquee-wrapper{
     text-align:center;
     border: 3px solid black;
+    margin: 0;
+    padding: 0;
 }
 
 .marquee-wrapper .container{
@@ -30,7 +32,8 @@
 }
 
 .marquee-inner.to-left{
-    animation: marqueeLeft 25s linear infinite;
+    --animation-time: 25s;
+    animation: marqueeLeft var(--animation-time) linear infinite;
 }
 
 .marquee-item{
@@ -54,4 +57,10 @@ background-color:#00cc00;
         left: -100%;
     }
 }
+
+@media (max-width: 800px) {
+    .marquee-inner.to-left{
+        --animation-time: 40s;
+    }
+  }
 

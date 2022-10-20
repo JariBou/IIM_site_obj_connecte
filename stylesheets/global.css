@@ -3,7 +3,8 @@ html{
 }
 
 body {
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 a:link {
@@ -17,4 +18,21 @@ a:hover {
 
 a:visited {
     color: black;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+header {      
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+footer {
+    text-align: center;
 }

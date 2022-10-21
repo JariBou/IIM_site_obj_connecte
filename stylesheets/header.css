@@ -1,0 +1,31 @@
+.nav-text-products {
+    font-size: x-large;
+}
+  
+.flex-nav {
+    width: 97%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+}
+
+.flex-nav p {
+    color: grey;
+}
+
+.sticky-header {
+    width: auto;
+    margin: auto;
+    padding: 10px 16px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    background: #ece9e9;
+    z-index: 50;
+}
+
+.sticky-nav-text {
+    font-size: medium;
+}

@@ -1,5 +1,5 @@
 var folder = "images/slideshow/";
-var filename_patter = "slide_X.jpg";
+var filename_pattern = "slide_X.jpg";
 
 window.onload = function() {
 
@@ -9,7 +9,7 @@ window.onload = function() {
     for (let id in marquees) {
         const marquee = marquees[id];
         for (let i = 0; i < 10; i++) {
-            const filename = filename_patter.replace('X', i);
+            const filename = filename_pattern.replace('X', i);
     
             var filepath = folder + filename;
     

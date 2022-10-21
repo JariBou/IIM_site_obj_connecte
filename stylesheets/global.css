@@ -7,6 +7,10 @@ body {
     margin-right: 0;
 }
 
+h1 {
+    font-size: xx-large;
+}
+
 a:link {
     color: black;
     text-decoration: none;
@@ -35,4 +39,48 @@ header {
 
 footer {
     text-align: center;
+}
+
+.custom-width {
+    --width: 50%;
+    width: var(--width);
+}
+
+.flex-space-around {
+justify-content: space-around;
+}
+
+.flex-space-evenly {
+justify-content: space-evenly;
+}
+
+.flex-center {
+justify-content: center;
+}
+
+.vertical-flex {
+flex-direction: column;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.disclaimer {
+    color: grey;
+    font-size: xs-small;
+}
+
+@media (max-width: 1000px) {
+    .disclaimer {
+        font-size: 8px;
+    }
+}
+
+footer a {
+    font-size: x-large;
+}
+
+.align-items-center {
+    align-items: center;
 }

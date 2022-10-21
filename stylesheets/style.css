@@ -21,26 +21,6 @@
 	top:1px;
 }
 
-.nav-text-products {
-  font-size: x-large;
-}
-
-.flex-nav {
-  width: 97%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  padding: 0;
-  align-items: center;
-}
-
-
-.video-container {
-    display: inline-block;
-    width: 100%;
-    columns: 3;
-}
-
 .centered-div {
     margin: auto;
     text-align: center;
@@ -57,39 +37,10 @@
     display: inline-block;
 }
 
-.sticky-header {
-    width: auto;
-    margin: auto;
-    padding: 10px 16px;
-    position: sticky;
-    text-align: center;
-    top: 0;
-    background: #ece9e9;
-    z-index: 50;
-}
-
-.sticky-nav-text {
-    font-size: medium;
-}
-
-
-
 .flex-container {
   display: flex;
   width: 90%;
   flex-wrap: wrap;
-}
-
-.flex-sapce {
-  justify-content: space-around;
-}
-
-.flex-center {
-  justify-content: center;
-}
-
-.vertical-flex {
-  flex-direction: column;
 }
 
 .flex-item-left {
@@ -101,9 +52,21 @@
   position: relative;
 }
 
+.separator-div {
+  --width: 20%;
+  width: var(--width);
+}
+
+
 @media (max-width: 1000px) {
   .flex-item-right, .flex-item-left {
     flex: 100%;
+  }
+  .separator-div {
+    --width: calc(var(--width) / 10);
+  }
+  .scroll {
+    font-size: x-small;
   }
 }
 
@@ -134,5 +97,14 @@
   overflow: auto;
   text-align: center;
   padding: 20px;
+  font-size: medium;
 }
 
+.clock-img {
+  height: auto;
+  width: 100%;
+}
+
+.app-market-img {
+  width: 100%;
+}

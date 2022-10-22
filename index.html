@@ -2,10 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>LaMetric - A Connected Clock</title>
+    <title>Time - A Connected Clock by LaMetric</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/headers.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/slideshow.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -18,6 +22,7 @@
             font-family: "Roboto", sans-serif;
         }
     </style>
+
 
 </head>
 <body>
@@ -34,9 +39,10 @@
 
     <div class="sticky-header">
         <div class="flex-nav custom-width margin-auto" style="--width: 60%;">  
+
             <div class="flex-container separator-div" style="--width: 25%;"></div>
 
-            <div class="flex-container flex-space-around" style="">
+            <div class="flex-container flex-space-around">
             <a class="sticky-nav-text" href="#video-anchor">Video</a>
         
             <a class="sticky-nav-text" href="#presentation-anchor">Presentation</a>    
@@ -44,6 +50,8 @@
             <a class="sticky-nav-text" href="#specs-anchor">Specs</a>
         
             <a class="sticky-nav-text" href="#slideshow-anchor">Examples</a>
+
+            <a class="sticky-nav-text" href="#market-anchor">Customisation</a>
             </div>
 
             <div class="flex-container separator-div" style="--width: 5%;"></div>
@@ -64,13 +72,14 @@
             </div>
             <div class="centered-div flex-container flex-center align-items-center">
                 <div class="flex-item-left">
+                    <h1 class="emphasized-text">LaMetric - Time</h1>
+                </div>
+                <div class="flex-item-right">
                     <video autoplay muted loop>
                         <source src="videos/Lametric_TIME.Overview.mp4" type="video/mp4">
                     </video>
                 </div> 
-                <div class="flex-item-right">
-                    Lorem ipsum tu connais
-                </div>
+                
             </div>
         </section>
 
@@ -90,17 +99,18 @@
                     <img src="images/1_Phone_clock_faces_0.png" alt="Phone with the clock app" height="720">
                 </div>
 
-                <div class="flex-item-right flex-container vertical-flex">
-
-                    <div class="align-items-center">
-                        <p>
-                            de efopa jfze fjo zejfiojzeio jfiozej fiozej fjioze jfiojzeiojf zejfioj zejf iozejf 
-                            iozejfio zeif ezijf oiez foez fioez fjfj eioz fzejf iozef ioze fioze ioze ezfoziejf 
-                            zfzef zeefzd z fzef ezdfdfzd zdf d fzdf zd fdzfd zd dfd zded fzdd ziof jzeioj feziof 
-                        </p>
-                    </div>
-                    <div>
-                        <img class="clock-img" src="images/LaMetric_clockface-min_0.jpg" alt="Clock linked with the Phone" height="240">
+                <div class="flex-item-right">
+                    <div class="flex-container vertical-flex flex-space-between custom-height margin-auto" style="--height: 100%;">
+                        <div class="align-items-center margin-auto">
+                            <p>
+                                de efopa jfze fjo zejfiojzeio jfiozej fiozej fjioze jfiojzeiojf zejfioj zejf iozejf 
+                                iozejfio zeif ezijf oiez foez fioez fjfj eioz fzejf iozef ioze fioze ioze ezfoziejf 
+                                zfzef zeefzd z fzef ezdfdfzd zdf d fzdf zd fdzfd zd dfd zded fzdd ziof jzeioj feziof 
+                            </p>
+                        </div>
+                        <div>
+                            <img class="clock-img" src="images/LaMetric_clockface-min_0.jpg" alt="Clock linked with the Phone" height="240">
+                        </div>
                     </div>
 
                 </div>
@@ -119,15 +129,14 @@
             </div>
             <div class="centered-div flex-container flex-space">
 
-                <div class="flex-item-left">
-                    <p>Specs motherfucker</p>
+                <div class="flex-item-left margin-auto">
                     <img src="images/front_specs_img.png" alt="Front and side specs img" height="300">
                     <img src="images/side_specs_img.png" alt="Side specs img" height="200">
                 </div>
 
                 <div class="flex-item-right">
                     
-                    <h1>Caractéristiques détaillées</h1>
+                    <h2>Caractéristiques détaillées</h2>
 
                     <div id="scrollSpecs" class="scroll" style="--width: 90%; --height: 20px;">
                         <div>
@@ -202,10 +211,10 @@
                     <div class="marquee-block">
                         <div class="marquee-inner to-left">
                             <span class="marquee-span">
-                                <!-- Done by JS -->
+                                <!-- Done by JS (scripts/script.js -> onload) -->
                             </span>
                             <span class="marquee-span">
-                                <!-- Done by JS -->
+                                <!-- Done by JS (scripts/script.js -> onload) -->
                             </span>
                         </div>
                     </div>
@@ -215,6 +224,7 @@
 
         <br>
         <br>
+
         <section id="market">
             
             <p class="anchor" id="market-anchor">anchor</p>
@@ -223,9 +233,13 @@
             </div>
             <div class="centered-div">
                 <img class="app-market-img" src="images/app_market.jpg" alt="app market">
+                <p>L'Horloge est compatible avec le LaMetric market où des créateurs postent des applications pour personnaliser votre 
+                    horloge connectée et y ajouter de nouvelles fonctionnalités!
+                </p>
             </div>
             
         </section>
+
         <br>
         <br>
         <div class="centered-div"></div>
@@ -253,7 +267,7 @@
             </div>
             <div>
                 <p class="disclaimer">
-                    DISCLAIMER: I do not own any of the images on this website, they are sole property of LaMetric<span>&copy;</span> and are used under Fair Use for a school project
+                    DISCLAIMER: I do not own any of the images on this website nor do I own Time<span>&copy;</span>, they are sole property of LaMetric<span>&copy;</span> and are used under Fair Use for a school project
                 </p>
             </div>
         </footer>

@@ -46,6 +46,11 @@ footer {
     width: var(--width);
 }
 
+.custom-height {
+    --height: 50%;
+    height: var(--height);
+}
+
 .flex-space-around {
 justify-content: space-around;
 }
@@ -53,6 +58,10 @@ justify-content: space-around;
 .flex-space-evenly {
 justify-content: space-evenly;
 }
+
+.flex-space-between {
+    justify-content: space-between;
+    }
 
 .flex-center {
 justify-content: center;

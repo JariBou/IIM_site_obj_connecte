@@ -42,7 +42,7 @@ var setScrollHeight = function() {
     var scroll = document.getElementById("scrollSpecs");
     var parent = scroll.parentNode;
     const parentHeight = parent.offsetHeight;
-    scroll.style.setProperty("--height", (80 / 100 * parentHeight).toString() + "px");
+    scroll.style.setProperty("--height", (90 / 100 * parentHeight).toString() + "px");
     console.log(20 / 100 * parentHeight);
 }
 

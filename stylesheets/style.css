@@ -33,10 +33,6 @@
     display: inline-block;
 }
 
-.centered-div div {
-    display: inline-block;
-}
-
 .flex-container {
   display: flex;
   width: 90%;
@@ -70,11 +66,11 @@
   }
 }
 
-.flex-item-right img {
+/* .flex-item-right img {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 
 .sticky-header + section {
   margin-top: 10px
@@ -107,4 +103,8 @@
 
 .app-market-img {
   width: 100%;
+}
+
+.emphasized-text {
+  font-size: 500%;
 }

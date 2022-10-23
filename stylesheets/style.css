@@ -9,7 +9,6 @@
 	font-size:15px;
 	padding:0px 10px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
 }
 
 .rounded-button:hover {
@@ -25,7 +24,7 @@
     margin: auto;
     text-align: center;
     width: 90%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     /* padding: 1%; */
 }
 
@@ -53,6 +52,10 @@
   width: var(--width);
 }
 
+.augment-width-mobile {
+  width: var(--width);
+}
+
 
 @media (max-width: 1000px) {
   .flex-item-right, .flex-item-left {
@@ -64,17 +67,11 @@
   .scroll {
     font-size: x-small;
   }
+  .augment-width-mobile{
+    --width: 100% !important;
+  }
 }
 
-/* .flex-item-right img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
-
-.sticky-header + section {
-  margin-top: 10px
-}
 
 .anchor {
   display: block;
@@ -89,7 +86,7 @@
   border-bottom: 2px solid black;
   border-radius: 50px;
   width: var(--width);
-  height: var(--height);
+  height: var(--height); /* Do with variables in case we need another scroll elsewhere with different sizing */
   overflow: auto;
   text-align: center;
   padding: 20px;
@@ -107,4 +104,9 @@
 
 .emphasized-text {
   font-size: 500%;
+}
+
+.useful-link {
+  color: rgb(73, 71, 71) !important; /* Important here so that it overrides the global.css value (apparently to use sparingly as it is of last resort (which is kind of the case here)) */
+  font-size: medium;
 }
